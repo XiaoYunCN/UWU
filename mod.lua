@@ -31,7 +31,7 @@ local CreditsTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-CreditsTab:AddParagraph(a.."，你好！欢迎来到☁️脚本")
+CreditsTab:AddParagraph("a..，你好！欢迎来到☁️脚本")
 
 coroutine.resume(NotificationCoroutine)
 
