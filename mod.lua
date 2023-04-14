@@ -31,15 +31,10 @@ local CreditsTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-CreditsTab:AddParagraph("a..，你好！欢迎来到☁️脚本")
 
-coroutine.resume(NotificationCoroutine)
 
-OrionLib:Init()
 
-task.wait(2)
-
-CreditsTab:AddParagraph("作者小云☁：欢迎来到☁脚本，你已经白单名")
+CreditsTab:AddParagraph("欢迎来到☁脚本")
 
 coroutine.resume(NotificationCoroutine)
 
