@@ -1,4 +1,4 @@
-# UWUlocal OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
 -----------------------------------------------------------------------------------------------------
 local Window = OrionLib:MakeWindow({Name = "“USA🇺🇸”", HidePremium = false, SaveConfig = true,IntroText = "“USA🇺🇸”", ConfigFolder = "“USA🇺🇸”"})
