@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Orion%20mobile.lua"))() 
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Orion%20mobile.lua"))()
 
 local Window = OrionLib:MakeWindow({Name = "瓜鸡脚本", HidePremium = false, SaveConfig = "制作🐸🐓", ConfigFolder = "Orion"}) 
   
@@ -7,6 +7,18 @@ Name = "常用脚本",
 Icon = "rbxassetid://4483345998", 
 PremiumOnly = false 
  }) 
+ Tab:AddToggle({
+	Name = "无限跳跳",
+	Default = false,
+	Callback = function(s)
+		getgenv().InfJ = s
+    game:GetService("UserInputService").JumpRequest:connect(function()
+        if InfJ == true then
+            game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+        end
+    end)
+	end
+})
 Tab:AddToggle({
 	Name = "穿墙",
 	Default = false,
@@ -71,6 +83,8 @@ Tab:AddButton({
 	Name = "飞车",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+end    
+})
 Tab:AddButton({
     Name = "光影",
     Callback = function()
@@ -243,7 +257,6 @@ Tab:AddToggle({
 	Name = "自动跳圈",
 	Default = false,
 	Callback = function(Value)
-		spawn(function()
 			while autoHoop do
 				for i, v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
 					firetouchinterest(v, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, 0)
@@ -264,12 +277,6 @@ Tab:AddToggle({
 	end
 })
 Tab:AddDropdown({
-	Name = "挑选宠物水晶",
-	Default = "1",
-	Yellow Crystal",{"Yellow Crystal", "Blue Crystal", "Red Crystal", "Lightning Crystal", "Inferno Crystal", "Lava Crystal", "Snow Crystal", "Electro Legends Crystal", "Space Crystal", "Alien Crystal", "Electro Crystal", "Desert Crystal"},function(Value)
-	getgenv().Egg = Value
-	end)
-Tab:AddDropdown({
 	Name = "自动抽宠物",
 	Default = "1",
     false, function(Value)
@@ -278,7 +285,7 @@ function Egg()
                     game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", getgenv().Egg)
                     wait()
                 end
-            end
+           end
             
             getgenv().AutoEgg = Value
             Egg()
