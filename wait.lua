@@ -12,5 +12,7 @@ return {
 ["qedmsmddm123"] = true,
 ["xzzd88"] = true,
 ["oooooopooooooio"] = true,
+["ooopoooooio"] = true,
+["oooopoooio"] = true,
 ["Hudson_From4"] = true,
 }
