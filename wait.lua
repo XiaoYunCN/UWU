@@ -14,5 +14,6 @@ return {
 ["oooooopooooooio"] = true,
 ["ooopoooooio"] = true,
 ["oooopoooio"] = true,
+["1q1q6y6y"] = true,
 ["Hudson_From4"] = true,
 }
