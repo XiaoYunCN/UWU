@@ -7,8 +7,7 @@ return {
 ["wsbbhhhhhhhhhh"] = true,
 ["iwqqqqqqqqqs"] = true,
 ["qwettt666"] = true,
-["cxcx981"] = 
+["cxcx981"] = true,
 ["sksjwj215"] = true,
 ["Hudson_From4"] = true,
-true,
 }
