@@ -10,7 +10,6 @@ return {
 ["cxcx981"] = true,
 ["sksjwj215"] = true,
 ["qedmsmddm123"] = true,
-["123fa98"] = true,
 ["xzzd88"] = true,
 ["Hudson_From4"] = true,
 }
