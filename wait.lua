@@ -7,6 +7,7 @@ return {
 ["Finaza520"] = true,
 ["wsbbhhhhhhhhhh"] = true,
 ["iwqqqqqqqqqs"] = true,
+["skxlgo"] = true,
 ["qwettt666"] = true,
 ["cxcx981"] = true,
 ["sksjwj215"] = true,
