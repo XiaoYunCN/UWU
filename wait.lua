@@ -1,5 +1,6 @@
 return {
 ["rigqazwww"] = true,
+["ckdycj07"] = true,
 ["xszxwhbdd"] = true,
 ["dkdkskqi3"] = true,
 ["Xiaolin171"] = true,
