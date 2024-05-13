@@ -1,4 +1,5 @@
 return {
+["qwertyuijfbr"] = true,
 ["renzhixin123"] = true,
 ["AWSTDW_ADQWD"] = true,
 ["rigqazwww"] = true,
