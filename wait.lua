@@ -1,4 +1,5 @@
 return {
+["AWSTDW_ADQWD"] = true,
 ["rigqazwww"] = true,
 ["wanchen1"] = true,
 ["uehb124E"] = true,
