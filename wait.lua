@@ -8,7 +8,7 @@ return {
 ["uehb124E"] = true,
 ["Simpsons367"] = true,
 ["zhangyunhao7"] = true,
-["qwertqw04"] = true,
+["NguyentrucwIEiR"] = true,
 ["phvvjji"] = true,
 ["Rakky110409"] = true,
 ["advent259"] = true,
