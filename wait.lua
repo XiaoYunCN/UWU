@@ -1,5 +1,6 @@
 return {
 ["Cloudhubscript"] = true,
+["jgyyug2"] = true,
 ["FYIYNKv"] = true,
 ["qwertyuijfbr"] = true,
 ["zhangmingsuo"] = true,
