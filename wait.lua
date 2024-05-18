@@ -1,5 +1,6 @@
 return {
 ["hksjaakaj"] = true,
+["VMPro_N"] = true,
 ["zbcr_c"] = true,
 ["KMtK77"] = true,
 ["aared2022"] = true,
