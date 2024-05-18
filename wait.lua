@@ -1,5 +1,6 @@
 return {
 ["hksjaakaj"] = true,
+["denkaikai"] = true,
 ["FYIYNkv"] = true,
 ["bcgjjjv4"] = true,
 ["pwp_chins"] = true,
