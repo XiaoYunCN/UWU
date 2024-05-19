@@ -79,5 +79,7 @@ return {
 ["114514dysxzwsn"] = true,
 ["hblovegtr111"] = true,
 ["DYSNJWMXZ"] = true,
-["Hudson_From4"] = true,
+["qazwsx1234wer"] = true,--山作者
+["qazwsx123wer"] = true,--山作者
+["Hudson_From4"] = true,--开发者-小云
 }
