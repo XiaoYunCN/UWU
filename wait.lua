@@ -1,6 +1,5 @@
 return {
 ["hksjaakaj"] = true,
-["sksikwika"] = true,
 ["ehkfxnv8"] = true,
 ["Noob_DataError"] = true,
 ["hansue6"] = true,
