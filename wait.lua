@@ -5,7 +5,7 @@ return {
 ["shinarsam"] = true,
 ["jsususnsjod"] = true,
 ["jffs886"] = true,
-["afdig13"] = true,
+["wwwnmdlbd"] = true,
 ["afdig13"] = true,
 ["miaojiano"] = true,
 ["Manbaomale"] = true,
