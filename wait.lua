@@ -10,7 +10,7 @@ return {
 ["shinarsam"] = true,
 ["jsususnsjod"] = true,
 ["jffs886"] = true,
-["wwwnmdlbd"] = true,
+["wwnmdlbd"] = true,
 ["afdig13"] = true,
 ["miaojiano"] = true,
 ["Manbaomale"] = true,
