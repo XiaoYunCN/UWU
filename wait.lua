@@ -81,5 +81,6 @@ return {
 ["DYSNJWMXZ"] = true,
 ["qazwsx1234wer"] = true,--山作者
 ["qazwsx123wer"] = true,--山作者
+["cmhehebeb"] = true,--清风脚本作者-之前风
 ["Hudson_From4"] = true,--开发者-小云
 }
