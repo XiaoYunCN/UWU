@@ -12,7 +12,7 @@ return {
 ["zbcr_c"] = true,
 ["KMtK77"] = true,
 ["aared2022"] = true,
-["chinetqt"] = true,
+["chinTQT"] = true,
 ["denkaikai"] = true,
 ["ojdajfohufhg"] = true,
 ["FYIYNkv"] = true,
