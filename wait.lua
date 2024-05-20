@@ -3,7 +3,6 @@ return {
 ["用户名"] = true,
 ["用户名"] = true,
 ["xiaohu2222222"] = true,
-["man_baig"] = true,
 ["OHuachen666"] = true,
 ["ahhahwhq3"] = true,
 ["qrwc27"] = true,
