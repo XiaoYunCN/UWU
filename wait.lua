@@ -1,4 +1,5 @@
 return {
+["CN_ase"] = true,
 ["wosskxows10"] = true,
 ["macr6688"] = true,
 ["750421EEEE"] = true,
