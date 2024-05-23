@@ -1,4 +1,6 @@
 return {
+["haonanshou1145142"] = true,
+["Sss12345649"] = true,
 ["CN_ase"] = true,
 ["wosskxows10"] = true,
 ["macr6688"] = true,
