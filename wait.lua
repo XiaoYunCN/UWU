@@ -1,4 +1,5 @@
 return {
+["ysqzs6767"] = true,
 ["GHUgeO"] = true,
 ["FBI_hmr"] = true,
 ["Gdnfjz"] = true,
