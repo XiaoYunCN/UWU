@@ -5,20 +5,20 @@ local GuiService = game:GetService("GuiService")
 local Light = game:GetService("Lighting")
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
 OrionLib:MakeNotification({
-    Name = "Evade",
-    Content = " Evade正在加载。",
+    Name = "云Evade",
+    Content = " 云Evade正在加载。",
     Image = "rbxassetid://4483345998",
     Time = 4
 })
 game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
 wait(4)
 OrionLib:MakeNotification({
-    Name = "Evade",
-    Content = "Evade还准备好了！",
+    Name = "云Evade",
+    Content = "云Evade还准备好了！",
     Image = "rbxassetid://4483345998",
     Time = 2
 })
-local Window = OrionLib:MakeWindow({Name = "Evade", HidePremium = false,IntroText = "来自国外Evade", SaveConfig = false, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "云-Evade", HidePremium = false,IntroText = "Evade", SaveConfig = false, ConfigFolder = "OrionTest"})
 
 --functions and shit
 getgenv().money = true
