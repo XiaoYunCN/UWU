@@ -103,7 +103,7 @@ return {
 ["646767T"] = true,
 ["sijasoa"] = true,
 ["X6yy3mPdwBvy23O"] = true,
-["Finaza520"] = true,
+["Shiny5s"] = true,
 ["wsbbhhhhhhhhhh"] = true,
 ["iwqqqqqqqqqs"] = true,
 ["skxlgo"] = true,
