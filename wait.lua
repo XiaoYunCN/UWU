@@ -1,6 +1,6 @@
 return {
 ["用户名"] = true,
-["用户名"] = true,
+["JIA1011_16"] = true,
 ["used114558"] = true,
 ["Lmdmosdnc722761"] = true,
 ["SUPERTOMATOHERO"] = true,
