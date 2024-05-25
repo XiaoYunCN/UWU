@@ -3,7 +3,7 @@ return {
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
-["用户名"] = true,
+["SUPERTOMATOHERO"] = true,
 ["MA154282"] = true,
 ["duwhhsishsjsgjs"] = true,
 ["FalseMusic"] = true,
