@@ -189,7 +189,7 @@ LoadTitle.TextTransparency = 1
 
 LoadFrame:TweenSize(UDim2.new(0, 321,0, 107), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
-wait(.6)
+wait(0.6)
 
 TweenService:Create(
 Barload,
@@ -207,7 +207,7 @@ TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 {TextTransparency = 0}
 ):Play()
 
-wait(.6)
+wait(0.6)
 
 Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "检查游戏..."
@@ -217,17 +217,17 @@ wait(1)
 Barload:TweenSize(UDim2.new(0, 100,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "获取数据..."
 
-wait(.5)
+wait(0.5)
 
 Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "执行脚本..."
 
-wait(.5)
+wait(0.5)
 
 Barload:TweenSize(UDim2.new(0, 200,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "正在准备.."
 
-wait(.5)
+wait(0.5)
 
 Barload:TweenSize(UDim2.new(0, 292,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "准备好了."
@@ -251,11 +251,11 @@ TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 {TextTransparency = 1}
 ):Play()
 
-wait(.6)
+wait(0.6)
 
 LoadFrame:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
-wait(.5)
+wait(0.5)
 Main.Visible = true
 
 Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
@@ -270,7 +270,7 @@ if io.KeyCode == CloseBind then
 if uitoggled == false then
 Main:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 uitoggled = true
-wait(.5)
+wait(0.5)
 Kinx.Enabled = false
 else
 Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
