@@ -1,4 +1,5 @@
 return {
+["G2NikoG2"] = true,
 ["Rosie_ZRlkX"] = true,
 ["nnnnkaja"] = true,
 ["qi20012"] = true,
