@@ -2,6 +2,7 @@ return {
 ["nnnnkaja"] = true,
 ["qi20012"] = true,
 ["lzb888"] = true,
+["lzb118"] = true,
 ["15xbdhh"] = true,
 ["jsnxvxos"] = true,
 ["hongyan4"] = true,
