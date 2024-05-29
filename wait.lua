@@ -1,4 +1,6 @@
 return {
+["XINGKONG001"] = true,
+["qwertyu132i"] = true,
 ["uaadddffgh"] = true,
 ["Xingkongxiadeyanhuo"] = true,
 ["LDQLDQDSB"] = true,
