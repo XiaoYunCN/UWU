@@ -1,4 +1,5 @@
 return {
+["Xingkongxiadeyanhuo"] = true,
 ["LDQLDQDSB"] = true,
 ["tcc123tt"] = true,
 ["114516_CN"] = true,
