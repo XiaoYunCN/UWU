@@ -1,4 +1,5 @@
 return {
+["drip_lite"] = true,
 ["a125257"] = true,
 ["wisjnsn64"] = true,
 ["GM_Hdedition"] = true,
