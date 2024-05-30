@@ -1,4 +1,5 @@
 return {
+["wisjnsn64"] = true,
 ["GM_Hdedition"] = true,
 ["wkv90"] = true,
 ["dudjxjx_4"] = true,
