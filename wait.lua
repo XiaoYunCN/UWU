@@ -1,4 +1,5 @@
 return {
+["GM_Hdedition"] = true,
 ["wkv90"] = true,
 ["dudjxjx_4"] = true,
 ["XINGKONG001"] = true,
