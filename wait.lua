@@ -1,4 +1,5 @@
 return {
+["mmp12v1"] = true,
 ["Huweixin258"] = true,
 ["drip_lite"] = true,
 ["a125257"] = true,
