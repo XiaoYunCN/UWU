@@ -1,5 +1,6 @@
 --你好
 return {
+["QPALZMW69"] = true,
 ["mmp12v1"] = true,
 ["Huweixin258"] = true,
 ["drip_lite"] = true,
