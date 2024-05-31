@@ -1,6 +1,6 @@
 --你好
 return {
-["kskskckzywu"] = true,
+["Kskskckzywu"] = true,
 ["QPALZMW69"] = true,
 ["mmp12v1"] = true,
 ["Huweixin258"] = true,
