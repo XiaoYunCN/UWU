@@ -1,5 +1,6 @@
 --你好
 return {
+["us_Starrysky"] = true,--星空脚本作者
 ["Kskskckzywu"] = true,
 ["QPALZMW69"] = true,
 ["mmp12v1"] = true,
