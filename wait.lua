@@ -1,5 +1,6 @@
 --你好
 return {
+["TC_taiyuan"] = true,
 ["us_Starrysky"] = true,--星空脚本作者
 ["Kskskckzywu"] = true,
 ["QPALZMW69"] = true,
