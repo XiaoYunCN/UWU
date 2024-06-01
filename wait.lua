@@ -1,9 +1,10 @@
 return {
+["CNQWQ118"] = true,
 ["yyds88670"] = true,
 ["exce3981"] = true,
 ["fifternoon"] = true,
 ["TC_taiyuan"] = true,
-["us_Starrysky"] = true,--星空脚本作者
+["us_Starrysky"] = true,
 ["Kskskckzywu"] = true,
 ["QPALZMW69"] = true,
 ["mmp12v1"] = true,
