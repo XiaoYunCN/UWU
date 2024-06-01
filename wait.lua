@@ -22,7 +22,7 @@ return {
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
-["m78liu"] = true,
+["M78liu"] = true,
 ["1145qingfengsb"] = true,
 ["QPALZMW69"] = true,
 ["dqtbcqci"] = true,
