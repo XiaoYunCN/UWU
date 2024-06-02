@@ -7,10 +7,10 @@ local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.RightControl
 
-local Kinx = Instance.new("ScreenGui")
-Kinx.Name = "Kinx"
-Kinx.Parent = game.CoreGui
-Kinx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local YunLib = Instance.new("ScreenGui")
+YunLib.Name = "云脚本中心"
+YunLib.Parent = game.CoreGui
+YunLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 coroutine.wrap(
 function()
@@ -85,10 +85,9 @@ end
 )
 end
 
-function lib:Window(text, loadingtitle, preset, closebind)
+function lib:Window(text, preset, closebind)
 CloseBind = closebind or Enum.KeyCode.RightControl
 PresetColor = preset or Color3.fromRGB(44, 120, 224)
-loadingtitle = loadingtitle or "Untitled"
 fs = false
 local Main = Instance.new("Frame")
 local TabHold = Instance.new("Frame")
@@ -98,7 +97,7 @@ local TabFolder = Instance.new("Folder")
 local DragFrame = Instance.new("Frame")
 
 Main.Name = "Main"
-Main.Parent = Kinx
+Main.Parent = YunLib
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Main.BorderSizePixel = 0
@@ -144,7 +143,7 @@ local LoadText = Instance.new("TextLabel")
 local LoadTitle = Instance.new("TextLabel")
 
 LoadFrame.Name = "LoadFrame"
-LoadFrame.Parent = Kinx
+LoadFrame.Parent = YunLib
 LoadFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 LoadFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 LoadFrame.BorderSizePixel = 0
@@ -181,7 +180,7 @@ LoadTitle.BackgroundTransparency = 1.000
 LoadTitle.Position = UDim2.new(0.0432743616, 0, 0.1125011, 0)
 LoadTitle.Size = UDim2.new(0, 200, 0, 23)
 LoadTitle.Font = Enum.Font.GothamSemibold
-LoadTitle.Text = loadingtitle
+LoadTitle.Text = "云脚本中心"
 LoadTitle.TextColor3 = Color3.fromRGB(68, 68, 68)
 LoadTitle.TextSize = 12.000
 LoadTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -189,7 +188,7 @@ LoadTitle.TextTransparency = 1
 
 LoadFrame:TweenSize(UDim2.new(0, 321,0, 107), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
-wait(0.6)
+wait(.6)
 
 TweenService:Create(
 Barload,
@@ -207,7 +206,7 @@ TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 {TextTransparency = 0}
 ):Play()
 
-wait(0.6)
+wait(.6)
 
 Barload:TweenSize(UDim2.new(0, 50,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "检查游戏..."
@@ -217,17 +216,17 @@ wait(1)
 Barload:TweenSize(UDim2.new(0, 100,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "获取数据..."
 
-wait(0.5)
+wait(.5)
 
 Barload:TweenSize(UDim2.new(0, 150,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "执行脚本..."
 
-wait(0.5)
+wait(.5)
 
 Barload:TweenSize(UDim2.new(0, 200,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "正在准备.."
 
-wait(0.5)
+wait(.5)
 
 Barload:TweenSize(UDim2.new(0, 292,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 LoadText.Text = "准备好了."
@@ -251,11 +250,11 @@ TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 {TextTransparency = 1}
 ):Play()
 
-wait(0.6)
+wait(.6)
 
 LoadFrame:TweenSize(UDim2.new(0, 0,0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 
-wait(0.5)
+wait(.5)
 Main.Visible = true
 
 Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
@@ -270,11 +269,11 @@ if io.KeyCode == CloseBind then
 if uitoggled == false then
 Main:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 uitoggled = true
-wait(0.5)
-Kinx.Enabled = false
+wait(.5)
+YunLib.Enabled = false
 else
 Main:TweenSize(UDim2.new(0, 560, 0, 319), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
-Kinx.Enabled = true
+YunLib.Enabled = true
 uitoggled = false
 end
 end
@@ -864,7 +863,7 @@ end
 )
 game:GetService("UserInputService").InputChanged:Connect(
 function(input)
-if dragging and input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
 move(input)
 end
 end
@@ -1300,7 +1299,7 @@ pcall(callback, BoxColor.BackgroundColor3)
 
 Color.InputBegan:Connect(
 function(input)
-if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+if input.UserInputType == Enum.UserInputType.MouseButton1 then
 if RainbowColorPicker then
 return
 end
@@ -1332,7 +1331,7 @@ end
 
 Color.InputEnded:Connect(
 function(input)
-if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+if input.UserInputType == Enum.UserInputType.MouseButton1 then
 if ColorInput then
 ColorInput:Disconnect()
 end
@@ -1342,7 +1341,7 @@ end
 
 Hue.InputBegan:Connect(
 function(input)
-if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+if input.UserInputType == Enum.UserInputType.MouseButton1 then
 if RainbowColorPicker then
 return
 end
@@ -1370,7 +1369,7 @@ end
 
 Hue.InputEnded:Connect(
 function(input)
-if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+if input.UserInputType == Enum.UserInputType.MouseButton1 then
 if HueInput then
 HueInput:Disconnect()
 end
