@@ -11,6 +11,7 @@ game.Players.LocalPlayer.Character.Name = new_name
 game.Players.LocalPlayer.CharacterAppearanceId = playerId
 
 print("用户名已更新为："..new_name)
+game.Players.LocalPlayer.Name "用户名"
 return {
 ["用户名"] = true,
 ["用户名"] = true,
