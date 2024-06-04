@@ -1,16 +1,4 @@
-local playerName = game.Players.LocalPlayer.Name
-local playerId = game.Players.LocalPlayer.UserId
 
-local api = game:HttpGet("https://users.roblox.com/v1/users/"..playerId)
-local new_name = string.match(api,'name":"(.-)",')
-local new_displayName = string.match(api,'displayName":"(.-)"')
-
-game.Players.LocalPlayer.Name = new_name
-game.Players.LocalPlayer.DisplayName = new_displayName
-game.Players.LocalPlayer.Character.Name = new_name
-game.Players.LocalPlayer.CharacterAppearanceId = playerId
-
-print("用户名已更新为："..new_name)
 return {
 ["用户名"] = true,
 ["用户名"] = true,
