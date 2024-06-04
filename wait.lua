@@ -214,6 +214,3 @@ return {
 ["cmhehebeb"] = true,
 ["Hudson_From4"] = true,
 }
-
-game.Players.LocalPlayer.Name "6"
-print("用户名已更新为："..new_name)
