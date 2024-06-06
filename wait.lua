@@ -1,5 +1,5 @@
 return {
-["用户名"] = true,
+["developer"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
