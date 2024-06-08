@@ -1,3 +1,4 @@
+--[[
 return {
 ["developer"] = true,
 ["用户名"] = true,
