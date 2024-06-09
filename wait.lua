@@ -1,4 +1,3 @@
---[[
 return {
 ["developer"] = true,
 ["用户名"] = true,
@@ -231,8 +230,6 @@ return {
 ["qazwsx1234wer"] = true,
 ["qazwsx123wer"] = true,
 ["123fa98"] = true,
-]]
 --["cmhehebeb"] = true,
-return {
 ["Hudson_From4"] = true,
 }
