@@ -1,7 +1,32 @@
-print("6")
---[[
-local hwid_list = loadstring(game.HttpGet(game,"https://raw.githubusercontent.com/XiaoYunCN/UWU/main/%E4%BA%91%E8%84%9A%E6%9C%AC%2F%E9%BB%91%E5%90%8D%E5%8D%95"))()
-if table.find(hwid_list,gethwid()) then
-   game.Players.LocalPlayer:Kick("你已被小云拉黑") 
+local http = game:GetService("HttpService")
+
+local function getHWIDBlacklist()
+    local url = "https://raw.githubusercontent.com/XiaoYunCN/UWU/main/%E4%BA%91%E8%84%9A%E6%9C%AC%2F%E9%BB%91%E5%90%8D%E5%8D%95"
+    local success, result = pcall(function()
+        return http:GetAsync(url)
+    end)
+    
+    if success then
+        local hwid_list = loadstring(result)()
+        return hwid_list
+    else
+        warn("Failed to fetch HWID blacklist")
+        return {}
+    end
+end
+
+local function gethwid()
+    return "example_hwid"
+end
+
+local function isBlacklisted(hwid, hwid_list)
+    return table.find(hwid_list, hwid) ~= nil
+end
+
+local hwid_list = getHWIDBlacklist()
+local player_hwid = gethwid()
+
+if isBlacklisted(player_hwid, hwid_list) then
+    game.Players.LocalPlayer:Kick("你已被小云拉黑")
 else
-]]
+end
