@@ -10,7 +10,7 @@ local function getHWIDBlacklist()
         local hwid_list = loadstring(result)()
         return hwid_list
     else
-        warn("Failed to fetch HWID blacklist")
+        warn("无法获取HWID黑名单")
         return {}
     end
 end
