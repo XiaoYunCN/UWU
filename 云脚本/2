@@ -1,6 +1,6 @@
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification",
-{Title = "一周左右有付费(白名单)",
+{Title = "一周左右后停止免费",
 Text = "之前买的可以用，找小云买",
 Duration = 11,
 })
