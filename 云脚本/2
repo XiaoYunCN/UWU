@@ -1,6 +1,11 @@
+local Allowed = loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/wait.lua", true))()
+if Allowed[game.Players.LocalPlayer.UserId] then
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification",
-{Title = "一周左右后停止免费",
-Text = "之前买的可以用云脚本。",
-Duration = 11,
+{Title = "你是白名单用户",
+Text = "",
+Duration = 4,
 })
+else
+print("Not Whitelisted Script")
+end
