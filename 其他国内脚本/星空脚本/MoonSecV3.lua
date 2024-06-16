@@ -1,3 +1,4 @@
+local CoreGui = game:GetService("StarterGui")
 game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "😡😡😡😡",
