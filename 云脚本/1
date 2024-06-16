@@ -1,3 +1,4 @@
+--[[
 local http = game:GetService("HttpService")
 local players = game:GetService("Players")
 local localPlayer = players.LocalPlayer
@@ -38,3 +39,4 @@ local player_hwid = generateHWID()
 if isBlacklisted(player_hwid, hwid_list) then
     localPlayer:Kick("你已被小云拉黑")
 else;end
+]]
