@@ -1,13 +1,26 @@
 local http = game:GetService("HttpService")
+local players = game:GetService("Players")
+local localPlayer = players.LocalPlayer
+
+local function generateHWID()
+    local userId = localPlayer.UserId
+    local platform = localPlayer.Platform
+    local deviceType = localPlayer.DeviceType
+    local hwid = tostring(userId) .. platform .. deviceType
+    return http:GenerateGUID(false) .. hwid 
+end
 
 local function getHWIDBlacklist()
     local url = "https://raw.githubusercontent.com/XiaoYunCN/UWU/main/%E4%BA%91%E8%84%9A%E6%9C%AC%2F%E9%BB%91%E5%90%8D%E5%8D%95"
     local success, result = pcall(function()
         return http:GetAsync(url)
     end)
-    
+
     if success then
-        local hwid_list = loadstring(result)()
+        local hwid_list = {}
+        for hwid in string.gmatch(result, "([^\r\n]+)") do
+            table.insert(hwid_list, hwid)
+        end
         return hwid_list
     else
         warn("无法获取HWID黑名单")
@@ -15,18 +28,13 @@ local function getHWIDBlacklist()
     end
 end
 
-local function gethwid()
-    return "example_hwid"
-end
-
 local function isBlacklisted(hwid, hwid_list)
     return table.find(hwid_list, hwid) ~= nil
 end
 
 local hwid_list = getHWIDBlacklist()
-local player_hwid = gethwid()
+local player_hwid = generateHWID()
 
 if isBlacklisted(player_hwid, hwid_list) then
-    game.Players.LocalPlayer:Kick("你已被小云拉黑")
-else
-end
+    localPlayer:Kick("你已被小云拉黑")
+else;end
