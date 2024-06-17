@@ -1,0 +1,27 @@
+coroutine.wrap(function()
+    repeat
+        wait()
+    until game:IsLoaded()
+    print("Game is fully loaded!")
+end)()
+
+
+coroutine.wrap(function()
+    repeat
+        wait()
+    until game.Players.LocalPlayer.Character
+    print("Local player character is loaded!")
+end)()
+
+local success, playid = pcall(function()
+    return game.Players:GetUserIdFromNameAsync(playername)
+end)
+
+if success then
+    print("Player ID fetched successfully: " .. playid)
+else
+    warn("Error to fetch Player ID")
+    game.Players.LocalPlayer:Kick("Failed to fetch Player ID")
+    
+    return
+end
