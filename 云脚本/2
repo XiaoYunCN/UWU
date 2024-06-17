@@ -16,12 +16,3 @@ end)()
 local success, playid = pcall(function()
     return game.Players:GetUserIdFromNameAsync(playername)
 end)
-
-if success then
-    print("Player ID fetched successfully: " .. playid)
-else
-    warn("Error to fetch Player ID")
-    game.Players.LocalPlayer:Kick("Failed to fetch Player ID")
-    
-    return
-end
