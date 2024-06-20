@@ -6,7 +6,7 @@ return {
 ["LLY_2023"] = true,
 ["wqusdcrhfgr"] = true,
 ["wurui91"] = true,
-["用户名"] = true,
+["CN_Noob1458"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 [""] = true,
