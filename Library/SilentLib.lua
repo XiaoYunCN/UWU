@@ -1536,3 +1536,4 @@ function library.new(library, name, theme)
     end
     return window
 end
+return library
