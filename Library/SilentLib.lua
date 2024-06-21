@@ -154,17 +154,17 @@ function library.new(library, name, theme)
             v:Destroy()
         end
     end
-        if theme == 'dark' then
-            MainColor = Color3.fromRGB(10,10,10)
-            Background = Color3.fromRGB(25, 25, 25)
-            zyColor= Color3.fromRGB(15,15,15)
-            beijingColor = Color3.fromRGB(255, 247, 247)
-            else
-            MainColor = Color3.fromRGB(255, 247, 247)
-            Background = Color3.fromRGB(8,8,8)
-            zyColor= Color3.fromRGB(0, 0, 0)
-            beijingColor = Color3.fromRGB(255, 247, 247)
-        end
+    if theme == "dark" then
+        MainColor = Color3.fromRGB(28, 33, 55)
+        Background = Color3.fromRGB(28, 33, 55)
+        zyColor = Color3.fromRGB(37, 43, 71)
+        beijingColor = Color3.fromRGB(255, 247, 247)
+    else
+        MainColor = Color3.fromRGB(28, 33, 55)
+        Background = Color3.fromRGB(28, 33, 55)
+        zyColor = Color3.fromRGB(37, 43, 71)
+        beijingColor = Color3.fromRGB(255, 247, 247)
+    end
     local dogent = Instance.new("ScreenGui")
     local Main = Instance.new("Frame")
     local TabMain = Instance.new("Frame")
@@ -491,17 +491,23 @@ function library.new(library, name, theme)
     Open.MouseButton1Click:Connect(function()
     if uihide == false then
         uihide = true
-        Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.7, true) 
-        wait(0.7)
+        Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.9, true) 
+        wait(0.5)
         Main.Visible = false
     else
         Main.Visible = true
         Main:TweenPosition(UDim2.new(0.5, 0, 0.451, 0), "Out", "Sine", 0.5, true) 
-        wait(0.7)
+        wait(0.5)
         uihide = false
     end
     end)
 
+
+
+    wait(0.1)
+    Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.7, true)
+    wait(0.5)
+    Main:TweenPosition(UDim2.new(0.5, 0, 0.5, 0), "Out", "Sine", 0.5, true) 
 
     drag(Main)
     UIG.Parent = Open
