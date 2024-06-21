@@ -491,13 +491,13 @@ function library.new(library, name, theme)
     Open.MouseButton1Click:Connect(function()
     if uihide == false then
         uihide = true
-        Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.5, true) 
-        wait(1)
+        Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.7, true) 
+        wait(0.7)
         Main.Visible = false
     else
         Main.Visible = true
         Main:TweenPosition(UDim2.new(0.5, 0, 0.451, 0), "Out", "Sine", 0.5, true) 
-        wait(1)
+        wait(0.7)
         uihide = false
     end
     end)
@@ -1532,8 +1532,8 @@ function library.new(library, name, theme)
             end
             return section
         end
-        return Tab
+        return tab
     end
-    return Window
+    return window
 end
-return Library
+return library
