@@ -1532,8 +1532,8 @@ function library.new(library, name, theme)
             end
             return section
         end
-        return tab
+        return Tab
     end
-    return window
+    return Window
 end
-return library
+return Library
