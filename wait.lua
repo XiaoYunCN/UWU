@@ -9,7 +9,7 @@ return {
 ["CN_Noob1458"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
-[""] = true,
+["wurui048"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
