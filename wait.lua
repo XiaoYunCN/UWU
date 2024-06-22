@@ -10,7 +10,7 @@ return {
 ["tftyjuisf"] = true,
 ["用户名"] = true,
 ["wurui048"] = true,
-["用户名"] = true,
+["madeinChinaNO2"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
