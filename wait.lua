@@ -7,7 +7,7 @@ return {
 ["wqusdcrhfgr"] = true,
 ["wurui91"] = true,
 ["CN_Noob1458"] = true,
-["用户名"] = true,
+["tftyjuisf"] = true,
 ["用户名"] = true,
 ["wurui048"] = true,
 ["用户名"] = true,
