@@ -159,11 +159,13 @@ function library.new(library, name, theme)
         Background = Color3.fromRGB(28, 33, 55)
         zyColor = Color3.fromRGB(37, 43, 71)
         beijingColor = Color3.fromRGB(255, 247, 247)
+        MainTransparency = 0.2
     else
         MainColor = Color3.fromRGB(28, 33, 55)
         Background = Color3.fromRGB(28, 33, 55)
         zyColor = Color3.fromRGB(37, 43, 71)
         beijingColor = Color3.fromRGB(255, 247, 247)
+        MainTransparency = 0.2
     end
     local dogent = Instance.new("ScreenGui")
     local Main = Instance.new("Frame")
@@ -749,7 +751,7 @@ function library.new(library, name, theme)
                 TextLabel.Font = Enum.Font.GothamSemibold
                 TextLabel.Text = text
                 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-                TectLabel.BackgroundTransparency = 0.2
+                TectLabel.BackgroundTransparency = MainTransparency
                 TextLabel.TextSize = 14.000
 
                 LabelC.CornerRadius = UDim.new(0, 6)
@@ -786,7 +788,7 @@ function library.new(library, name, theme)
                 ToggleBtn.Name = "ToggleBtn"
                 ToggleBtn.Parent = ToggleModule
                 ToggleBtn.BackgroundColor3 = zyColor
-                TectLabel.BackgroundTransparency = 0.2
+                TectLabel.BackgroundTransparency = MainTransparency
                 ToggleBtn.BorderSizePixel = 0
                 ToggleBtn.Size = UDim2.new(0, 428, 0, 38)
                 ToggleBtn.AutoButtonColor = false
@@ -803,7 +805,7 @@ function library.new(library, name, theme)
                 ToggleDisable.Name = "ToggleDisable"
                 ToggleDisable.Parent = ToggleBtn
                 ToggleDisable.BackgroundColor3 = Background
-                TectLabel.BackgroundTransparency = 0.2
+                TectLabel.BackgroundTransparency = MainTransparency
                 ToggleDisable.BorderSizePixel = 0
                 ToggleDisable.Position = UDim2.new(0.901869178, 0, 0.208881587, 0)
                 ToggleDisable.Size = UDim2.new(0, 36, 0, 22)
@@ -908,7 +910,7 @@ function library.new(library, name, theme)
                 KeybindBtn.Name = "KeybindBtn"
                 KeybindBtn.Parent = KeybindModule
                 KeybindBtn.BackgroundColor3 = zyColor
-                KeybindBtn.BackgroundTransparency = 0.2
+                KeybindBtn.BackgroundTransparency = MainTransparency
                 KeybindBtn.BorderSizePixel = 0
                 KeybindBtn.Size = UDim2.new(0, 428, 0, 38)
                 KeybindBtn.AutoButtonColor = false
@@ -1019,7 +1021,7 @@ function library.new(library, name, theme)
                 TextboxBack.Name = "TextboxBack"
                 TextboxBack.Parent = TextboxModule
                 TextboxBack.BackgroundColor3 = zyColor
-                TectboxBack.BackgroundTransparency = 0.2
+                TectboxBack.BackgroundTransparency = MainTransparency
                 TextboxBack.BorderSizePixel = 0
                 TextboxBack.Size = UDim2.new(0, 428, 0, 38)
                 TextboxBack.AutoButtonColor = false
@@ -1125,7 +1127,7 @@ function library.new(library, name, theme)
                 SliderBack.Name = "SliderBack"
                 SliderBack.Parent = SliderModule
                 SliderBack.BackgroundColor3 = zyColor
-                SliderBack.BackgroundTransparency = 0.2
+                SliderBack.BackgroundTransparency = MainTransparency
                 SliderBack.BorderSizePixel = 0
                 SliderBack.Size = UDim2.new(0, 428, 0, 38)
                 SliderBack.AutoButtonColor = false
@@ -1143,7 +1145,7 @@ function library.new(library, name, theme)
                 SliderBar.Parent = SliderBack
                 SliderBar.AnchorPoint = Vector2.new(0, 0.5)
                 SliderBar.BackgroundColor3 = Background
-                SliderBar.TectLabel.BackgroundTransparency = 0.2
+                SliderBar.TectLabel.BackgroundTransparency = MainTransparency
                 SliderBar.BorderSizePixel = 0
                 SliderBar.Position = UDim2.new(0.369000018, 40, 0.5, 0)
                 SliderBar.Size = UDim2.new(0, 140, 0, 12)
@@ -1165,7 +1167,7 @@ function library.new(library, name, theme)
                 SliderValBG.Name = "SliderValBG"
                 SliderValBG.Parent = SliderBack
                 SliderValBG.BackgroundColor3 = Background
-                SliderValBG.BackgroundTransparency = 0.2
+                SliderValBG.BackgroundTransparency = MainTransparency
                 SliderValBG.BorderSizePixel = 0
                 SliderValBG.Position = UDim2.new(0.883177578, 0, 0.131578952, 0)
                 SliderValBG.Size = UDim2.new(0, 44, 0, 28)
@@ -1380,7 +1382,7 @@ function library.new(library, name, theme)
                 DropdownTop.Name = "DropdownTop"
                 DropdownTop.Parent = DropdownModule
                 DropdownTop.BackgroundColor3 = zyColor
-                DropdownTop.BackgroundTransparency = 0.2
+                DropdownTop.BackgroundTransparency = MainTransparency
                 DropdownTop.BorderSizePixel = 0
                 DropdownTop.Size = UDim2.new(0, 428, 0, 38)
                 DropdownTop.AutoButtonColor = false
