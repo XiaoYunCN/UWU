@@ -155,15 +155,15 @@ function library.new(library, name, theme)
         end
     end
     if theme == "dark" then
-        MainColor = Color3.fromRGB(28, 33, 55)
-        Background = Color3.fromRGB(28, 33, 55)
-        zyColor = Color3.fromRGB(37, 43, 71)
+        MainColor = Color3.fromRGB(20, 20, 20)
+        Background = Color3.fromRGB(20, 20, 20)
+        zyColor = Color3.fromRGB(1, 0, 0)
         beijingColor = Color3.fromRGB(255, 247, 247)
         MainTransparency = 0.2
     else
-        MainColor = Color3.fromRGB(28, 33, 55)
-        Background = Color3.fromRGB(28, 33, 55)
-        zyColor = Color3.fromRGB(37, 43, 71)
+        MainColor = Color3.fromRGB(20, 20, 20)
+        Background = Color3.fromRGB(20, 20, 20)
+        zyColor = Color3.fromRGB(1, 0, 0)
         beijingColor = Color3.fromRGB(255, 247, 247)
         MainTransparency = 0.2
     end
@@ -215,6 +215,7 @@ function library.new(library, name, theme)
     Main.BorderColor3 = MainColor
     Main.Position = UDim2.new(0.5, 0, 0.5, 0)
     Main.Size = UDim2.new(0, 572, 0, 353)
+    Main.Transparency = 0.4
     Main.ZIndex = 1
     Main.Active = true
     Main.Draggable = true
@@ -238,7 +239,7 @@ function library.new(library, name, theme)
     DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
     DropShadow.Size = UDim2.new(1, 43, 1, 43)
     DropShadow.ZIndex = 0
-    DropShadow.Image = "rbxassetid://6015897843"
+    --DropShadow.Image = "rbxassetid://6015897843"
     DropShadow.ImageColor3 = Color3.fromRGB(255, 255, 255)
     DropShadow.ImageTransparency = 0
     DropShadow.ScaleType = Enum.ScaleType.Slice
@@ -246,19 +247,19 @@ function library.new(library, name, theme)
 
     UIGradient.Color =
         ColorSequence.new {
-        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)),
-        ColorSequenceKeypoint.new(0.10, Color3.fromRGB(255, 127, 0)),
-        ColorSequenceKeypoint.new(0.20, Color3.fromRGB(255, 255, 0)),
-        ColorSequenceKeypoint.new(0.30, Color3.fromRGB(0, 255, 0)),
-        ColorSequenceKeypoint.new(0.40, Color3.fromRGB(0, 255, 255)),
-        ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 255)),
-        ColorSequenceKeypoint.new(0.60, Color3.fromRGB(139, 0, 255)),
-        ColorSequenceKeypoint.new(0.70, Color3.fromRGB(255, 0, 0)),
-        ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 127, 0)),
-        ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 255, 0)),
-        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))
+        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.10, Color3.fromRGB(10, 10, 10)),
+        ColorSequenceKeypoint.new(0.20, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.30, Color3.fromRGB(10, 10, 10)),
+        ColorSequenceKeypoint.new(0.40, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.50, Color3.fromRGB(10, 10, 10)),
+        ColorSequenceKeypoint.new(0.60, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.70, Color3.fromRGB(10, 10, 10)),
+        ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(0.90, Color3.fromRGB(10, 10, 10)),
+        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))
     }
-    UIGradient.Parent = DropShadow
+    --UIGradient.Parent = DropShadow
 
     local TweenService = game:GetService("TweenService")
     local tweeninfo = TweenInfo.new(7, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
@@ -538,7 +539,6 @@ function library.new(library, name, theme)
         TabIco.BorderSizePixel = 0
         TabIco.Size = UDim2.new(0, 24, 0, 24)
         TabIco.Image = ("rbxassetid://%s"):format((icon or 4370341699))
-        TabIco.ImageTransparency = 0.2
 
         TabText.Name = "TabText"
         TabText.Parent = TabIco
@@ -551,7 +551,6 @@ function library.new(library, name, theme)
         TabText.TextColor3 = Color3.fromRGB(255, 255, 255)
         TabText.TextSize = 14.000
         TabText.TextXAlignment = Enum.TextXAlignment.Left
-        TabText.TextTransparency = 0.2
 
         TabBtn.Name = "TabBtn"
         TabBtn.Parent = TabIco
