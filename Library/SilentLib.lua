@@ -297,6 +297,7 @@ function library.new(library, name, theme)
     SB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     SB.BorderColor3 = MainColor
     SB.Size = UDim2.new(0, 8, 0, 353)
+    SB.Transparency = 0.4
 
     SBC.CornerRadius = UDim.new(0, 6)
     SBC.Name = "SBC"
@@ -310,6 +311,7 @@ function library.new(library, name, theme)
     Side.ClipsDescendants = true
     Side.Position = UDim2.new(1, 0, 0, 0)
     Side.Size = UDim2.new(0, 110, 0, 353)
+    Side.Transparency = 0.4
 
     SideG.Color = ColorSequence.new {ColorSequenceKeypoint.new(0.00, zyColor), ColorSequenceKeypoint.new(1.00, zyColor)}
     SideG.Rotation = 90
@@ -486,28 +488,28 @@ function library.new(library, name, theme)
     Open.TextSize = 14.000
     Open.Active = true
     Open.Draggable = true
-    local uihide = false 
+    local uihide = false
 
-    Open.MouseButton1Click:Connect(function()
-    if uihide == false then
-        uihide = true
-        Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.9, true) 
-        wait(0.5)
-        Main.Visible = false
-    else
-        Main.Visible = true
-        Main:TweenPosition(UDim2.new(0.5, 0, 0.451, 0), "Out", "Sine", 0.5, true) 
-        wait(0.5)
-        uihide = false
-    end
-    end)
-
-
+    Open.MouseButton1Click:Connect(
+        function()
+            if uihide == false then
+                uihide = true
+                Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.9, true)
+                wait(0.5)
+                Main.Visible = false
+            else
+                Main.Visible = true
+                Main:TweenPosition(UDim2.new(0.5, 0, 0.451, 0), "Out", "Sine", 0.5, true)
+                wait(0.5)
+                uihide = false
+            end
+        end
+    )
 
     wait(0.1)
     Main:TweenPosition(UDim2.new(0.5, 0, 2, 0), "Out", "Sine", 0.7, true)
     wait(0.5)
-    Main:TweenPosition(UDim2.new(0.5, 0, 0.5, 0), "Out", "Sine", 0.5, true) 
+    Main:TweenPosition(UDim2.new(0.5, 0, 0.5, 0), "Out", "Sine", 0.5, true)
 
     drag(Main)
     UIG.Parent = Open
@@ -698,6 +700,7 @@ function library.new(library, name, theme)
                 BtnModule.BorderSizePixel = 0
                 BtnModule.Position = UDim2.new(0, 0, 0, 0)
                 BtnModule.Size = UDim2.new(0, 428, 0, 38)
+                BtnModule.Transparency = 0.4
 
                 Btn.Name = "Btn"
                 Btn.Parent = BtnModule
@@ -746,6 +749,7 @@ function library.new(library, name, theme)
                 TextLabel.Font = Enum.Font.GothamSemibold
                 TextLabel.Text = text
                 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+                TectLabel.BackgroundTransparency = 0.2
                 TextLabel.TextSize = 14.000
 
                 LabelC.CornerRadius = UDim.new(0, 6)
@@ -782,6 +786,7 @@ function library.new(library, name, theme)
                 ToggleBtn.Name = "ToggleBtn"
                 ToggleBtn.Parent = ToggleModule
                 ToggleBtn.BackgroundColor3 = zyColor
+                TectLabel.BackgroundTransparency = 0.2
                 ToggleBtn.BorderSizePixel = 0
                 ToggleBtn.Size = UDim2.new(0, 428, 0, 38)
                 ToggleBtn.AutoButtonColor = false
@@ -798,6 +803,7 @@ function library.new(library, name, theme)
                 ToggleDisable.Name = "ToggleDisable"
                 ToggleDisable.Parent = ToggleBtn
                 ToggleDisable.BackgroundColor3 = Background
+                TectLabel.BackgroundTransparency = 0.2
                 ToggleDisable.BorderSizePixel = 0
                 ToggleDisable.Position = UDim2.new(0.901869178, 0, 0.208881587, 0)
                 ToggleDisable.Size = UDim2.new(0, 36, 0, 22)
@@ -902,6 +908,7 @@ function library.new(library, name, theme)
                 KeybindBtn.Name = "KeybindBtn"
                 KeybindBtn.Parent = KeybindModule
                 KeybindBtn.BackgroundColor3 = zyColor
+                KeybindBtn..BackgroundTransparency = 0.2
                 KeybindBtn.BorderSizePixel = 0
                 KeybindBtn.Size = UDim2.new(0, 428, 0, 38)
                 KeybindBtn.AutoButtonColor = false
@@ -1012,6 +1019,7 @@ function library.new(library, name, theme)
                 TextboxBack.Name = "TextboxBack"
                 TextboxBack.Parent = TextboxModule
                 TextboxBack.BackgroundColor3 = zyColor
+                TectboxBack.BackgroundTransparency = 0.2
                 TextboxBack.BorderSizePixel = 0
                 TextboxBack.Size = UDim2.new(0, 428, 0, 38)
                 TextboxBack.AutoButtonColor = false
@@ -1117,6 +1125,7 @@ function library.new(library, name, theme)
                 SliderBack.Name = "SliderBack"
                 SliderBack.Parent = SliderModule
                 SliderBack.BackgroundColor3 = zyColor
+                SliderBack.BackgroundTransparency = 0.2
                 SliderBack.BorderSizePixel = 0
                 SliderBack.Size = UDim2.new(0, 428, 0, 38)
                 SliderBack.AutoButtonColor = false
@@ -1134,6 +1143,7 @@ function library.new(library, name, theme)
                 SliderBar.Parent = SliderBack
                 SliderBar.AnchorPoint = Vector2.new(0, 0.5)
                 SliderBar.BackgroundColor3 = Background
+                SliderBar.TectLabel.BackgroundTransparency = 0.2
                 SliderBar.BorderSizePixel = 0
                 SliderBar.Position = UDim2.new(0.369000018, 40, 0.5, 0)
                 SliderBar.Size = UDim2.new(0, 140, 0, 12)
@@ -1155,6 +1165,7 @@ function library.new(library, name, theme)
                 SliderValBG.Name = "SliderValBG"
                 SliderValBG.Parent = SliderBack
                 SliderValBG.BackgroundColor3 = Background
+                SliderValBG.BackgroundTransparency = 0.2
                 SliderValBG.BorderSizePixel = 0
                 SliderValBG.Position = UDim2.new(0.883177578, 0, 0.131578952, 0)
                 SliderValBG.Size = UDim2.new(0, 44, 0, 28)
@@ -1369,6 +1380,7 @@ function library.new(library, name, theme)
                 DropdownTop.Name = "DropdownTop"
                 DropdownTop.Parent = DropdownModule
                 DropdownTop.BackgroundColor3 = zyColor
+                DropdownTop.BackgroundTransparency = 0.2
                 DropdownTop.BorderSizePixel = 0
                 DropdownTop.Size = UDim2.new(0, 428, 0, 38)
                 DropdownTop.AutoButtonColor = false
