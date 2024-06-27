@@ -8,7 +8,7 @@ return {
 ["wurui91"] = true,
 ["CN_Noob1458"] = true,
 ["tftyjuisf"] = true,
-["用户名"] = true,
+["123456widhjd"] = true,
 ["wurui048"] = true,
 ["madeinChinaNO2"] = true,
 ["a153557"] = true,
