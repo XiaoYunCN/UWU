@@ -133,7 +133,7 @@ return {
 ["mianmiangggggg"] = true,
 ["ddjddj77"] = true,
 ["neiber350"] = true,
-["kr520l"] = true,
+--["kr520l"] = true, 不让使用云脚本
 ["annabusitu"] = true,
 ["nm114514h"] = true,
 ["114514home2"] = true,
