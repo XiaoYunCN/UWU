@@ -21,7 +21,7 @@ return {
 ["用户名"] = true,
 ["rxsrxsrxs4"] = true,
 ["xiezhiein"] = true,
-["gwc342"] = true,
+["gwc324"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
