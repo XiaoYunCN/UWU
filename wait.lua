@@ -18,7 +18,7 @@ return {
 ["wurui999"] = true,
 ["millon8e"] = true,
 ["dwwrewrweg"] = true,
-["用户名"] = true,
+["ch11451417"] = true,
 ["rxsrxsrxs4"] = true,
 ["xiezhiein"] = true,
 ["gwc324"] = true,
