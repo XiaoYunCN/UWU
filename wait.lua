@@ -22,7 +22,7 @@ return {
 ["rxsrxsrxs4"] = true,
 ["xiezhiein"] = true,
 ["gwc324"] = true,
-["用户名"] = true,
+["ziyou_26"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
