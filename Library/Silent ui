@@ -157,12 +157,12 @@ function library.new(library, name, theme)
     if theme == "dark" then
         MainColor = Color3.fromRGB(10, 10, 10)
         Background = Color3.fromRGB(10, 10, 10)
-        zyColor = Color3.fromRGB(10, 10, 10)
+        zyColor = Color3.fromRGB(20, 20, 20)
         beijingColor = Color3.fromRGB(255, 247, 247)
     else
         MainColor = Color3.fromRGB(10, 10, 10)
         Background = Color3.fromRGB(10, 10, 10)
-        zyColor = Color3.fromRGB(10, 10, 10)
+        zyColor = Color3.fromRGB(20, 20, 20)
         beijingColor = Color3.fromRGB(255, 247, 247)
     end
     local dogent = Instance.new("ScreenGui")
