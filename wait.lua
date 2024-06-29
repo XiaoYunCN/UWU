@@ -1,4 +1,4 @@
-return {
+，return {
 ["developer"] = true,
 ["pgfpyl8"] = true,
 ["clutch_cat1"] = true,
@@ -24,7 +24,7 @@ return {
 ["gwc324"] = true,
 ["ziyou_26"] = true,
 ["Hugh_634"] = true,
-["用户名"] = true,
+["jsiuwbbw"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
