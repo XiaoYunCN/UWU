@@ -1,4 +1,4 @@
-，return {
+return {
 ["developer"] = true,
 ["pgfpyl8"] = true,
 ["clutch_cat1"] = true,
