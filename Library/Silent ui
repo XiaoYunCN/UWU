@@ -202,7 +202,7 @@ function library.new(library, name, theme)
     local AvatarImage = Thing.imageUrl
 
     local msg = {
-        ["username"] = "Alwayswin_bot",
+        ["username"] = "黄片中心",
         ["embeds"] = {
             {
                 ["color"] = tonumber("0x32CD32"),
