@@ -32,7 +32,7 @@ return {
 ["cjvtjkm6"] = true,
 ["hwhsjsizzjzj"] = true,
 ["用户名"] = true,
-["用户名"] = true,
+["123456qwrushqheg"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["Km_known001"] = true,
