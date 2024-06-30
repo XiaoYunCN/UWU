@@ -30,7 +30,7 @@ return {
 ["China_91666"] = true,
 ["JVKOGJIBG"] = true,
 ["cjvtjkm6"] = true,
-["用户名"] = true,
+["hwhsjsizzjzj"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
