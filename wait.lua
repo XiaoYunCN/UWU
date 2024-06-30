@@ -31,7 +31,7 @@ return {
 ["JVKOGJIBG"] = true,
 ["cjvtjkm6"] = true,
 ["hwhsjsizzjzj"] = true,
-["用户名"] = true,
+["aajjjjji"] = true,
 ["123456qwrushqheg"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
