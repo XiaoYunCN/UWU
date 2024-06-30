@@ -1615,6 +1615,7 @@ end)
                 end
                 
                 
+                seed(name)
 
                 funcs:SetOptions(options)
 
@@ -1626,7 +1627,6 @@ end)
     end
     return window
 end
-seed(name)
 return library
 
 
