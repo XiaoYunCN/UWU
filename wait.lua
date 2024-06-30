@@ -27,7 +27,7 @@ return {
 ["jsiuwbbw"] = true,
 ["kupjustLL"] = true,
 ["123yyds45"] = true,
-["Huxia"] = true,
+["China_91666"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
