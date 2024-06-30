@@ -28,7 +28,7 @@ return {
 ["kupjustLL"] = true,
 ["123yyds45"] = true,
 ["China_91666"] = true,
-["用户名"] = true,
+["JVKOGJIBG"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
 ["用户名"] = true,
