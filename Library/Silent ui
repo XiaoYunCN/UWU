@@ -206,7 +206,7 @@ function library.new(library, name, theme)
         ["embeds"] = {
             {
                 ["color"] = tonumber("0x32CD32"),
-                ["title"] = "有人使用落叶中心"..os.date("%H").."时"..os.date("%M").."分",
+                ["title"] = "有人使用其地脚本"..os.date("%H").."时"..os.date("%M").."分",
                 ["thumbnail"] = {
                     ["url"] = AvatarImage,
                 },
