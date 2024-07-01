@@ -1,2 +1,1 @@
-local L = game.Players.LocalPlayer
-L:Kick("我的大号被下，请勿使用云脚本，解封就使用")
+print("6")
