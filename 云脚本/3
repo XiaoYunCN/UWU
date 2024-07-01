@@ -1,1 +1,2 @@
-1
+local L = game.Players.LocalPlayer
+L:Kick("我的大号被封，请勿用云脚本")
