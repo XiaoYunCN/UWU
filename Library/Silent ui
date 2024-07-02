@@ -61,7 +61,7 @@ function Ripple(obj)
         end
     )
 end
-wait(9)
+
 local toggled = false
 
 -- # Switch Tabs # --
@@ -322,6 +322,7 @@ function library.new(library, name, theme)
     )
     drag(Main)
     seed()
+    wait(3)
 
     
     UICornerMain.Parent = Main
