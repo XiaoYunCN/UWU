@@ -61,7 +61,7 @@ function Ripple(obj)
         end
     )
 end
-
+wait(9)
 local toggled = false
 
 -- # Switch Tabs # --
