@@ -1,7 +1,1 @@
-local CoreGui = game:GetService("StarterGui")
-game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "😡😡😡😡",
-    Text = "云脚本开发者",
-    Duration = 10, 
-})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/UI-library/main/%E8%BD%B0%E7%82%B8%E6%89%8B%E6%9C%BA.lua", true))()
