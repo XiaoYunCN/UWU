@@ -1,2 +1,5 @@
 --krX你好装
+repeat
+    task.wait()
+until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/UI-library/main/%E8%BD%B0%E7%82%B8%E6%89%8B%E6%9C%BA.lua", true))()
