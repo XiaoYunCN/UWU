@@ -2,8 +2,7 @@ coroutine.wrap(function()
     repeat
         wait()
     until game:IsLoaded()
-    Notify("游戏已满负荷！", " ", 1.2)
-    print("")
+    print("游戏已加载！")
 end)()
 
 
@@ -11,7 +10,7 @@ coroutine.wrap(function()
     repeat
         wait()
     until game.Players.LocalPlayer.Character
-    Notify("本地玩家角色已加载！", " ", 1.2)
+    print("本地玩家角色已加载！")
 end)()
 
 local success, playid = pcall(function()
