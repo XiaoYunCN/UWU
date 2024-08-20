@@ -1,18 +1,1 @@
-coroutine.wrap(function()
-    repeat
-        wait()
-    until game:IsLoaded()
-    print("游戏已加载！")
-end)()
-
-
-coroutine.wrap(function()
-    repeat
-        wait()
-    until game.Players.LocalPlayer.Character
-    print("本地玩家角色已加载！")
-end)()
-
-local success, playid = pcall(function()
-    return game.Players:GetUserIdFromNameAsync(playername)
-end)
+fc
