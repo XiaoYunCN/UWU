@@ -8,7 +8,7 @@ local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.RightControl
 
 local YunLib = Instance.new("ScreenGui")
-YunLib.Name = "云脚本中心"
+YunLib.Name = "Kinx"
 YunLib.Parent = game.CoreGui
 YunLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -180,7 +180,7 @@ LoadTitle.BackgroundTransparency = 1.000
 LoadTitle.Position = UDim2.new(0.0432743616, 0, 0.1125011, 0)
 LoadTitle.Size = UDim2.new(0, 200, 0, 23)
 LoadTitle.Font = Enum.Font.GothamSemibold
-LoadTitle.Text = "云脚本中心"
+LoadTitle.Text = "Kinx"
 LoadTitle.TextColor3 = Color3.fromRGB(68, 68, 68)
 LoadTitle.TextSize = 12.000
 LoadTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -229,7 +229,7 @@ LoadText.Text = "正在准备.."
 wait(.5)
 
 Barload:TweenSize(UDim2.new(0, 292,0, 2), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
-LoadText.Text = "准备好了."
+LoadText.Text = "准备好了"
 
 wait(2)
 
